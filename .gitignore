@@ -21,6 +21,9 @@ out/
 # Logs
 *.log
 
+# Oracle data volume
+/data/
+
 # Java
 *.class
 
