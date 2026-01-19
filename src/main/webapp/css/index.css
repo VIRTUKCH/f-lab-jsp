@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+:root {
+  --bg: #0b1220;
+  --bg-2: #1b2a3a;
+  --ink: #eaf2ff;
+  --ink-soft: #b9c7e6;
+  --accent: #ffb020;
+  --accent-2: #56d0ff;
+  --card: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.18);
+}
+
+body.home {
+  font-family: "Space Grotesk", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(86, 208, 255, 0.2), transparent 60%),
+    radial-gradient(900px 500px at 90% 0%, rgba(255, 176, 32, 0.18), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 104px 20px 48px;
+}
+
+.frame {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.headline {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: 0.6px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: var(--ink-soft);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.board {
+  display: grid;
+  gap: 14px;
+}
+
+.board-item {
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.board-item h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.board-item p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--accent-2);
+  font-size: 12px;
+}
+
+@media (max-width: 880px) {
+  .frame {
+    grid-template-columns: 1fr;
+  }
+}

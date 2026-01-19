@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>글쓰기</title>
+  <link rel="stylesheet" href="<%= request.getContextPath() %>/css/common.css" />
 </head>
 <body>
+  <%@ include file="/jsp/components/topbar.jsp" %>
   <h1>글쓰기</h1>
   <form action="WriteProcess.jsp" method="post">
     <div>
@@ -16,7 +18,10 @@
       <label>내용</label>
       <textarea name="content"></textarea>
     </div>
-    <button type="submit">저장</button>
+    <div class="actions">
+      <button class="btn" type="submit">저장</button>
+      <a class="btn" href="List.jsp">목록</a>
+    </div>
   </form>
 </body>
 </html>
