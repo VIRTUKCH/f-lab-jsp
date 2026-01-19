@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+
+# IntelliJ / VSCode (혹시 섞일 수 있어서)
+.idea/
+.vscode/
+
+# Eclipse
+.metadata/
+.recommenders/
+.settings/
+.classpath
+.project
+
+# Build outputs
+target/
+build/
+bin/
+out/
+
+# Logs
+*.log
+
+# Java
+*.class
+
+# Tomcat / Server runtime (Eclipse WTP)
+Servers/
+.runtime/
+wtpwebapps/
+work/
+
+# Maven wrapper (있으면)
+.mvn/wrapper/maven-wrapper.jar
