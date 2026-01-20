@@ -1,0 +1,6 @@
+CREATE TABLE member (
+    id       VARCHAR2(50) PRIMARY KEY,
+    pass     VARCHAR2(100) NOT NULL,
+    name     VARCHAR2(50) NOT NULL,
+    regidate DATE DEFAULT SYSDATE NOT NULL
+);
