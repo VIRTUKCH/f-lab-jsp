@@ -36,3 +36,18 @@
 - [2026-01-19 22:29] index CSS 보완: 홈 화면 전용 폰트 설정 추가.
 - [2026-01-19 22:30] web.xml 호환성 조정: Java EE 3.1 네임스페이스로 수정.
 - [2026-01-19 22:33] web.xml 되돌림: Jakarta EE 5.0 네임스페이스로 복구.
+- [2026-01-20 20:40] BoardDto 생성: board/dto/BoardDto.java 추가.
+- [2026-01-20 20:41] BoardDto 수정: visitcount 타입을 String으로 변경.
+- [2026-01-20 20:55] BoardDao 생성: board/dao/BoardDao.java 추가.
+- [2026-01-20 20:57] JDBConnect 생성 및 BoardDao 연동: common/JDBConnect.java 추가, BoardDao에 ServletContext 생성자 연결.
+- [2026-01-20 20:59] web.xml DB 연결 정보 추가 및 BoardDao import 정리.
+- [2026-01-20 21:00] Tomcat 9 대응: javax.servlet으로 전환하고 web.xml을 Java EE 3.1로 변경.
+- [2026-01-20 21:02] BoardDao에 selectCount() 추가.
+- [2026-01-20 21:04] BoardDao에 검색 파라미터 Map을 받는 selectCount(Map) 추가.
+- [2026-01-20 21:05] BoardDao 기본 selectCount() 제거.
+- [2026-01-20 21:06] BoardDao selectCount를 Statement 기반으로 변경, JDBConnect에 stmt 추가.
+- [2026-01-20 21:07] BoardDao selectCount에서 StringBuilder 제거, 문자열 연결로 변경.
+- [2026-01-20 21:08] BoardDao에 selectList(Map) 추가.
+- [2026-01-20 21:10] 게시판 목록 JSP에 DB 조회 결과 출력 로직 추가.
+- [2026-01-20 21:12] 게시판 목록 JSP에 총 게시물 수 출력 추가.
+- [2026-01-20 21:28] 게시판 목록 JSP에 검색 폼 추가.
